@@ -1,43 +1,48 @@
 package com.chenzeshenga.springboot.model;
 
-public class User {
-    private String grantee;
+import java.io.Serializable;
 
-    private String tableCatalog;
+public class User implements Serializable {
 
-    private String privilegeType;
+	private static final long serialVersionUID = -5176336931556421215L;
 
-    private String isGrantable;
+	private String grantee;
 
-    public String getGrantee() {
-        return grantee;
-    }
+	private String tableCatalog;
 
-    public void setGrantee(String grantee) {
-        this.grantee = grantee;
-    }
+	private String privilegeType;
 
-    public String getTableCatalog() {
-        return tableCatalog;
-    }
+	private String isGrantable;
 
-    public void setTableCatalog(String tableCatalog) {
-        this.tableCatalog = tableCatalog;
-    }
+	public String getGrantee() {
+		return grantee;
+	}
 
-    public String getPrivilegeType() {
-        return privilegeType;
-    }
+	public void setGrantee(String grantee) {
+		this.grantee = grantee;
+	}
 
-    public void setPrivilegeType(String privilegeType) {
-        this.privilegeType = privilegeType;
-    }
+	public String getTableCatalog() {
+		return tableCatalog;
+	}
 
-    public String getIsGrantable() {
-        return isGrantable;
-    }
+	public void setTableCatalog(String tableCatalog) {
+		this.tableCatalog = tableCatalog;
+	}
 
-    public void setIsGrantable(String isGrantable) {
-        this.isGrantable = isGrantable;
-    }
+	public String getPrivilegeType() {
+		return privilegeType;
+	}
+
+	public void setPrivilegeType(String privilegeType) {
+		this.privilegeType = privilegeType;
+	}
+
+	public String getIsGrantable() {
+		return isGrantable;
+	}
+
+	public void setIsGrantable(String isGrantable) {
+		this.isGrantable = isGrantable;
+	}
 }
